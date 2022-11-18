@@ -1,10 +1,13 @@
 const express = require("express")
+const cors = require('cors')
 const mongo = require("mongodb").MongoClient
+
 
 
 // 1. init app and add middlewares
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 
 // 2. database

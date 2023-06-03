@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 
-// 2. database
+// 2. connect to database
 const url = "mongodb://localhost:27017"
 let db, trips, expenses
 mongo.connect(
